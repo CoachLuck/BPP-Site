@@ -55,7 +55,7 @@
     <div style="background: #f1f1f1;">
         <div class="container space">
             <div class="row align-items-center searchbar">
-                <div class="col col-sm-4"><input class="border rounded" type="search" id="searchtext" placeholder="Search for a texture"></div>
+                <div class="col col-sm-4"><input class="border rounded" type="search" id="searchtext" placeholder="Search for a texture" onkeyup="search()"></div>
                 <div class="col text-left col-sm-2">
                     <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Label</label></div>
                 </div>
@@ -69,93 +69,85 @@
                     <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-1">Label</label></div>
                 </div>
             </div>
-            <div class="row" style="height: 300px;">
+            <div class="row" id="textureList">
+                <div class="col-md-3">
+                    <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/textures/backpack-red/card-header.png">
+                        <div class="card-body">
+                            <p id="hidden-tag">Name, Desc, tag, something</p>
+                            <h4 class="card-title">Red Backpack</h4>
+                            <h6 class="text-muted card-subtitle mb-2">Just a basic red backpack.</h6><button class="btn btn-primary" type="button" onclick="setClipboard(&#39;backpack-red&#39;)">Copy URL</button></div>
+                    </div>
+                </div>
                 <div class="col-md-3">
                     <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/overlay.png">
                         <div class="card-body">
-                            <h4 class="card-title">Title</h4>
+                            <p id="hidden-tag">Name, Desc, tag, something</p>
+                            <h4 class="card-title">Test</h4>
                             <h6 class="text-muted card-subtitle mb-2">Just a little description. Blah blah blah.</h6><button class="btn btn-primary" type="button" onclick="setClipboard(&#39;URL HERE&#39;)">Copy URL</button></div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/overlay.png">
                         <div class="card-body">
-                            <h4 class="card-title">Title</h4>
+                            <p id="hidden-tag">Name, Desc, tag, something</p>
+                            <h4 class="card-title">Test</h4>
                             <h6 class="text-muted card-subtitle mb-2">Just a little description. Blah blah blah.</h6><button class="btn btn-primary" type="button" onclick="setClipboard(&#39;URL HERE&#39;)">Copy URL</button></div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/overlay.png">
                         <div class="card-body">
-                            <h4 class="card-title">Title</h4>
+                            <p id="hidden-tag">Name, Desc, tag, something</p>
+                            <h4 class="card-title">Test</h4>
                             <h6 class="text-muted card-subtitle mb-2">Just a little description. Blah blah blah.</h6><button class="btn btn-primary" type="button" onclick="setClipboard(&#39;URL HERE&#39;)">Copy URL</button></div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/overlay.png">
                         <div class="card-body">
-                            <h4 class="card-title">Title</h4>
-                            <h6 class="text-muted card-subtitle mb-2">Just a little description. Blah blah blah.<br></h6><button class="btn btn-primary" type="button" onclick="setClipboard(&#39;URL HERE&#39;)">Copy URL</button></div>
+                            <p id="hidden-tag">Name, Desc, tag, something</p>
+                            <h4 class="card-title">Test</h4>
+                            <h6 class="text-muted card-subtitle mb-2">Just a little description. Blah blah blah.</h6><button class="btn btn-primary" type="button" onclick="setClipboard(&#39;backpack-red&#39;)">Copy URL</button></div>
                     </div>
                 </div>
-            </div>
-            <div class="row" style="height: 300px;">
                 <div class="col-md-3">
                     <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/overlay.png">
                         <div class="card-body">
-                            <h4 class="card-title">Title</h4>
+                            <p id="hidden-tag">Name, Desc, tag, something</p>
+                            <h4 class="card-title">Test</h4>
                             <h6 class="text-muted card-subtitle mb-2">Just a little description. Blah blah blah.</h6><button class="btn btn-primary" type="button" onclick="setClipboard(&#39;URL HERE&#39;)">Copy URL</button></div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/overlay.png">
                         <div class="card-body">
-                            <h4 class="card-title">Title</h4>
+                            <p id="hidden-tag">Name, Desc, tag, something</p>
+                            <h4 class="card-title">Test</h4>
                             <h6 class="text-muted card-subtitle mb-2">Just a little description. Blah blah blah.</h6><button class="btn btn-primary" type="button" onclick="setClipboard(&#39;URL HERE&#39;)">Copy URL</button></div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/overlay.png">
                         <div class="card-body">
-                            <h4 class="card-title">Title</h4>
+                            <p id="hidden-tag">Name, Desc, tag, something</p>
+                            <h4 class="card-title">Test</h4>
                             <h6 class="text-muted card-subtitle mb-2">Just a little description. Blah blah blah.</h6><button class="btn btn-primary" type="button" onclick="setClipboard(&#39;URL HERE&#39;)">Copy URL</button></div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/overlay.png">
                         <div class="card-body">
-                            <h4 class="card-title">Title</h4>
-                            <h6 class="text-muted card-subtitle mb-2">Just a little description. Blah blah blah.<br></h6><button class="btn btn-primary" type="button" onclick="setClipboard(&#39;URL HERE&#39;)">Copy URL</button></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="height: 300px;">
-                <div class="col-md-3">
-                    <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/overlay.png">
-                        <div class="card-body">
-                            <h4 class="card-title">Title</h4>
+                            <p id="hidden-tag">Name, Desc, tag, something</p>
+                            <h4 class="card-title">Test</h4>
                             <h6 class="text-muted card-subtitle mb-2">Just a little description. Blah blah blah.</h6><button class="btn btn-primary" type="button" onclick="setClipboard(&#39;URL HERE&#39;)">Copy URL</button></div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/overlay.png">
                         <div class="card-body">
-                            <h4 class="card-title">Title</h4>
+                            <p id="hidden-tag">Name, Desc, tag, something</p>
+                            <h4 class="card-title">Test</h4>
                             <h6 class="text-muted card-subtitle mb-2">Just a little description. Blah blah blah.</h6><button class="btn btn-primary" type="button" onclick="setClipboard(&#39;URL HERE&#39;)">Copy URL</button></div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/overlay.png">
-                        <div class="card-body">
-                            <h4 class="card-title">Title</h4>
-                            <h6 class="text-muted card-subtitle mb-2">Just a little description. Blah blah blah.</h6><button class="btn btn-primary" type="button" onclick="setClipboard(&#39;URL HERE&#39;)">Copy URL</button></div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card"><img class="card-img-top w-100 d-block" src="assets/img/overlay.png">
-                        <div class="card-body">
-                            <h4 class="card-title">Title</h4>
-                            <h6 class="text-muted card-subtitle mb-2">Just a little description. Blah blah blah.<br></h6><button class="btn btn-primary" type="button" onclick="setClipboard(&#39;URL HERE&#39;)">Copy URL</button></div>
                     </div>
                 </div>
             </div>
@@ -188,6 +180,7 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/copy.js"></script>
+    <script src="assets/js/search.js"></script>
 </body>
 
 </html>
