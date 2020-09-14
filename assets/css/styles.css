@@ -37,9 +37,24 @@ input {
   display: none;
 }
 
-.card-img-top.w-100.d-block {
-  border: 1px solid black;
-  border-radius: 2px;
+.header {
+  background: rgb(104,161,215);
+  background: -moz-radial-gradient(circle, rgba(104,161,215,1) 21%, rgba(57,107,154,1) 59%, rgba(41,85,126,1) 94%);
+  background: -webkit-radial-gradient(circle, rgba(104,161,215,1) 21%, rgba(57,107,154,1) 59%, rgba(41,85,126,1) 94%);
+  background: radial-gradient(circle, rgba(104,161,215,1) 21%, rgba(57,107,154,1) 59%, rgba(41,85,126,1) 94%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#68a1d7",endColorstr="#29557e",GradientType=1);
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom: 2px solid #68a1d7;
+}
+
+.overlay {
+  width: 50%;
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card {
